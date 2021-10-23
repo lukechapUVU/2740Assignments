@@ -6,20 +6,25 @@ header {
     margin-top: -8px;
 }
 body {
-    background-color: red;
+    background-color: burlywood;
     max-width: 1200px;
     margin: 0 auto 0 auto;
 }
+@media only screen and (max-width: 574px) {
+    li a {
+        font-size: 18px;
+    }
+}
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0 25px 10px 0;
+    margin-left: -30px;
+    padding: 0 0 10px 0;
     padding-bottom: 10px;
     overflow: hidden;
     display: flex;
 }
 li {
-    font-size: 30px;
+    font-size: 24px;
     flex-basis: 25%;
 } 
 li a {
@@ -43,12 +48,12 @@ li a:hover {
     margin-bottom: 60px;
 }
 .cookie-pic {
-    width: 25%;
+    width: 50%;
     float: right;
     display: block;
 }
 .intro {
-    width: 75%;
+    width: 50%;
     float: left;
 }
 main {
