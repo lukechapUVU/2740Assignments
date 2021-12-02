@@ -44,6 +44,10 @@ li a:hover {
     color: #410500;
     border-bottom: 3px solid #410500;
 }
+li a.active {
+    background-color: #280000;
+    color: beige;
+}
 .main-header {
     color: #410500;
 }

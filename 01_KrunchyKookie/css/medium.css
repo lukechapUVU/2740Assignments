@@ -41,6 +41,10 @@ li a:hover {
     background-color: burlywood;
     color: #410500;
 }
+li a.active {
+    background-color: #280000;
+    color: beige;
+}
 .main-header {
     color: #410500;
 }
