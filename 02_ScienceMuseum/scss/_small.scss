@@ -1,0 +1,93 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* body rules */
+body {
+    font-family: $fontFamily;
+    font-size: 16px;
+}
+.science-logo {
+    float: left;
+    width: 80px;
+    margin-right: 5px;
+}
+header {
+    background-color: $headerColor;
+    font-weight: $heavyWeight;
+    padding: 1rem 2%;
+    h1 {
+        margin: 0; 
+        font-size: 1.5rem;
+        padding-top: 50px;
+    }
+    h2 {
+        margin: 0; 
+        font-size: 0; 
+        font-weight: $regularWeight;
+        visibility: hidden;
+    }
+}
+
+nav {
+    background-color: $navBackgroundColor;
+    ul{
+        margin:0; 
+        padding: 0;
+    }
+    li {
+        list-style-type: none;
+        .active {
+            background-color: $navActiveColor;
+        }
+    }
+    a {
+        display: block;
+        padding: .8rem 0; /*44px min*/
+        color: $navTextColor;
+        text-align: center;
+        text-decoration: none;
+        :hover {
+            background-color: $navHoverColor;
+        }
+    }
+}
+
+main{
+    font-weight: $regularWeight;
+    display: block;
+    padding: 1rem 2%;
+    h1 {
+        color: #17a8e4; 
+        font-size: 1.3rem
+    }
+    figure{
+        margin: 0;
+        width: 100%;
+        img {
+            width: 100%;
+        }
+        .exhibitphoto{
+            margin: 0;
+            width: 100%;
+        }
+    }
+    figcaption {
+        text-align: center; 
+        font-size: .8rem;
+    }
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 2%;
+}
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

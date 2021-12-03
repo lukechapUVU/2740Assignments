@@ -1,0 +1,38 @@
+@media only screen and (min-width: 560px) {
+    
+    header {
+        height: 120px;
+        h1 {
+            padding-top: 35px;
+            margin: 0; 
+            font-size: 2rem;
+        }
+        h2{
+            margin: 0; 
+            font-size: 1.2rem; 
+            visibility: visible;
+        }
+    }
+    .science-logo {
+        margin: -5px 20px;
+        width: 100px;
+    }
+    nav li {
+        width: 25%; float: left;
+    }
+    main figure {
+        float: right; 
+        width: 48%; 
+        margin-left: 2%;
+        padding-bottom: .5rem;
+    }
+    div.news {
+        clear: both;
+        column-count: 2;
+        column-rule: 1px solid #ddd;
+    }
+    footer {
+        background-color: black;
+        color: white;
+    }
+} /* end of media query */
