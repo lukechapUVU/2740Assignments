@@ -1,78 +1,78 @@
-header {
-    background-color: #873e23;
-    padding: 5px 0 0 25px;
-    color: white;
-    max-width: 1200px;
-    margin-top: -8px;
-}
-body {
-    background-color: burlywood;
-    max-width: 1200px;
-    margin: 0 auto 0 auto;
-}
-@media only screen and (max-width: 574px) {
+@media only screen and (min-width: 560px) {
+    header {
+        background-color: #873e23;
+        padding: 5px 0 0 25px;
+        color: white;
+        max-width: 1200px;
+        margin-top: -8px;
+    }
+    body {
+        background-color: burlywood;
+        max-width: 1200px;
+        margin: 0 auto 0 auto;
+    }
     li a {
         font-size: 18px;
         height: 28px;
     }
-}
-ul {
-    list-style-type: none;
-    margin-left: -30px;
-    padding: 0 0 10px 0;
-    padding-bottom: 10px;
-    overflow: hidden;
-    display: flex;
-    height: 24px;
-}
-li {
-    font-size: 24px;
-    flex-basis: 25%;
-} 
-li a {
-    display: block;
-    text-align: center;
-    padding-top: 6px;
-    text-decoration: none;
-    background-color: #410500;
-    color: beige;
-}
-li a:hover {
-    background-color: burlywood;
-    color: #410500;
-}
-li a.active {
-    background-color: #280000;
-    color: beige;
-}
-.main-header {
-    color: #410500;
-}
-.intro-pic {
-    float: left;
-    display: block;
-    margin-bottom: 60px;
-}
-.cookie-pic {
-    width: 50%;
-    float: right;
-    display: block;
-}
-.intro {
-    width: 50%;
-    float: left;
-}
-main {
-    padding: 0px 15px 0px 15px;
-    line-height: 25px;
-}
-footer {
-    background-color: #873e23;
-    width: 100%;
-    align-content: center;
-    margin: 100px auto 0 auto;
-    color: white;
-    text-align: center;
-    padding: 20px 0px 20px 15px;
-    max-width: 1200px;
+    ul {
+        list-style-type: none;
+        margin-left: -30px;
+        padding: 0 0 10px 0;
+        padding-bottom: 10px;
+        overflow: hidden;
+        display: flex;
+        height: 24px;
+    }
+    li {
+        font-size: 24px;
+        flex-basis: 25%;
+    } 
+    li a {
+        display: block;
+        text-align: center;
+        padding-top: 6px;
+        text-decoration: none;
+        background-color: #410500;
+        color: beige;
+    }
+    li a:hover {
+        background-color: burlywood;
+        color: #410500;
+    }
+    li a.active {
+        background-color: #280000;
+        color: beige;
+    }
+    .main-header {
+        color: #410500;
+    }
+    .intro-pic {
+        float: left;
+        display: block;
+        margin-bottom: 60px;
+    }
+    .cookie-pic {
+        width: 50%;
+        float: right;
+        display: block;
+    }
+    .intro {
+        width: 50%;
+        float: left;
+    }
+    main {
+        padding: 0px 15px 0px 15px;
+        line-height: 25px;
+    }
+    footer {
+        background-color: #873e23;
+        width: 100%;
+        align-content: center;
+        margin: 100px auto 0 auto;
+        color: white;
+        text-align: center;
+        padding: 20px 0px 20px 15px;
+        max-width: 1200px;
+    }
 }
