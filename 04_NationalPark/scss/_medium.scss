@@ -1,0 +1,53 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header {
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+#headerWrapper {
+    background-image: url("../imgs/header-medium.jpg");
+    height: 262px;
+}
+
+/*----------- NAVIGATION --------------*/
+    nav ul li {width: auto;}
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem; font-size: 1rem;}
+
+
+/*----------- MAIN --------------*/
+main div img {
+    padding-top: 2%;
+}
+.bobcat-card {
+    width: 50%;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.elk-card {
+    width: 50%;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.owl-card {
+    width: 50%;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    font-size: .8rem;
+}    
