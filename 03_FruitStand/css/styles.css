@@ -327,11 +327,11 @@ header {
 
 header h1 {
   margin: 3.5rem 0 0 0;
-  font-size: 1.5rem; }
+  font-size: 1.3rem; }
 
 header h2 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: normal; }
 
 /*----------- NAVIGATION --------------*/
@@ -350,11 +350,11 @@ nav ul li {
 nav ul li a {
   display: block;
   background-color: #60992D;
-  color: #373737;
+  color: black;
   border-left: 1px solid #8CAE68;
   padding: .5rem 0;
   text-decoration: none;
-  font-size: .9rem;
+  font-size: .7rem;
   text-align: center; }
 
 nav ul li.active a {
@@ -362,16 +362,16 @@ nav ul li.active a {
   color: white; }
 
 nav ul li a:hover {
-  background-color: #bce9b7;
+  background-color: #ade2a8;
   color: black; }
 
 /*----------- MAIN --------------*/
 main {
   padding: 0 2%;
   min-height: 10rem;
-  font-size: 0.8rem; }
+  font-size: 0.7rem; }
   main h1 {
-    font-size: 1.3rem; }
+    font-size: 1rem; }
 
 .gallery-parent {
   display: flex;
@@ -391,7 +391,6 @@ footer {
   background-color: #8CAE68;
   padding: .5rem 2%;
   text-align: center;
-  color: white;
   font-size: 0.6rem; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
@@ -422,7 +421,8 @@ footer {
     border-right: 1px solid #8CAE68; }
 
   nav ul li a {
-    padding: .5rem 1rem; }
+    padding: .5rem 1rem;
+    font-size: 1rem; }
 
   /*----------- MAIN --------------*/
   main {
