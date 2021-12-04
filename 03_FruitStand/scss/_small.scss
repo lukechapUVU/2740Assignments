@@ -1,0 +1,110 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: $fontFamily;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    display: grid;
+    grid-template-columns: 115px auto;
+}
+header h1 {
+    margin: 3.5rem 0 0 0;
+    font-size: 1.5rem;
+}
+header h2 {
+    margin: 0; 
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: $backgroundColor;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    background-color: $elementColor;
+    color: #eee;
+    border-left: 1px solid $backgroundColor;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li.active a {
+    background-color: $activeColor;
+    color: white;
+}
+nav ul li a:hover {
+    background-color: $backgroundColor;
+    color: black;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    h1 {
+        font-size: 1.3rem;
+    }
+    font-size: 0.8rem;
+}
+.gallery-parent {
+    display: flex;
+    flex-wrap: wrap;
+}
+figure {
+    margin: 3% 1%;
+    width: 48%;
+    img {
+        width: 100%;
+    }
+    figcaption {
+        text-align: center;
+        align-content: center;
+    }
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: $backgroundColor;
+    padding: .5rem 2%;
+    text-align: center;
+    color: white;
+    font-size: 0.6rem;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

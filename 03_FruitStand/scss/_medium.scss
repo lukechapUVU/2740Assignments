@@ -1,0 +1,40 @@
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+
+/*----------- NAVIGATION --------------*/
+    nav ul {margin-left: 2%;}
+    nav ul li {width: auto;}
+    nav ul li:first-child a {border-left: 1px solid $backgroundColor}
+    nav ul li:last-child a {border-right: 1px solid $backgroundColor}
+    nav ul li a{padding: .5rem 1rem;}
+
+
+/*----------- MAIN --------------*/
+main {
+    font-size: 1rem;
+    h1 {
+        font-size: 1.4rem;
+    }
+}
+figure {
+    width: 31%;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    font-size: 0.8rem;
+}    
