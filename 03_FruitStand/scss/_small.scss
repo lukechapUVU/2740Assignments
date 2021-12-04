@@ -50,7 +50,7 @@ nav ul li {
 nav ul li a {
     display: block;
     background-color: $elementColor;
-    color: #eee;
+    color: #373737;
     border-left: 1px solid $backgroundColor;
     padding: .5rem 0;
     text-decoration: none;
@@ -62,7 +62,7 @@ nav ul li.active a {
     color: white;
 }
 nav ul li a:hover {
-    background-color: $backgroundColor;
+    background-color: rgb(188, 233, 183);
     color: black;
 }
 

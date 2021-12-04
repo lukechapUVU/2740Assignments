@@ -350,7 +350,7 @@ nav ul li {
 nav ul li a {
   display: block;
   background-color: #60992D;
-  color: #eee;
+  color: #373737;
   border-left: 1px solid #8CAE68;
   padding: .5rem 0;
   text-decoration: none;
@@ -362,7 +362,7 @@ nav ul li.active a {
   color: white; }
 
 nav ul li a:hover {
-  background-color: #8CAE68;
+  background-color: #bce9b7;
   color: black; }
 
 /*----------- MAIN --------------*/
