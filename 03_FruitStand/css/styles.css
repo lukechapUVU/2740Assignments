@@ -336,7 +336,7 @@ header h2 {
 
 /*----------- NAVIGATION --------------*/
 nav {
-  background-color: #8CAE68; }
+  background-color: #477221; }
 
 nav ul {
   list-style-type: none;
@@ -351,18 +351,18 @@ nav ul li a {
   display: block;
   background-color: #60992D;
   color: black;
-  border-left: 1px solid #8CAE68;
+  border-left: 1px solid #477221;
   padding: .5rem 0;
   text-decoration: none;
   font-size: .7rem;
   text-align: center; }
 
 nav ul li.active a {
-  background-color: #254D32;
+  background-color: #2f4a16;
   color: white; }
 
 nav ul li a:hover {
-  background-color: #ade2a8;
+  background-color: #86c949;
   color: black; }
 
 /*----------- MAIN --------------*/
@@ -388,7 +388,7 @@ figure {
 
 /*----------- FOOTER --------------*/
 footer {
-  background-color: #8CAE68;
+  background-color: #60992D;
   padding: .5rem 2%;
   text-align: center;
   font-size: 0.6rem; }
@@ -415,10 +415,10 @@ footer {
     width: auto; }
 
   nav ul li:first-child a {
-    border-left: 1px solid #8CAE68; }
+    border-left: 1px solid #477221; }
 
   nav ul li:last-child a {
-    border-right: 1px solid #8CAE68; }
+    border-left: 1px solid #477221; }
 
   nav ul li a {
     padding: .5rem 1rem;

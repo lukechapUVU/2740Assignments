@@ -22,10 +22,10 @@ nav ul li {
     width: auto;
 }
 nav ul li:first-child a {
-    border-left: 1px solid $backgroundColor
+    border-left: 1px solid darken($elementColor, 10%);
 }
 nav ul li:last-child a {
-    border-right: 1px solid $backgroundColor
+    border-left: 1px solid darken($elementColor, 10%);
 }
 nav ul li a{
     padding: .5rem 1rem;
