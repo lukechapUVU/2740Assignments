@@ -462,6 +462,9 @@ main {
     text-align: center;
     font-size: .8rem; }
 
+.hero-image {
+  width: 100%; }
+
 footer {
   background-color: black;
   color: white;
