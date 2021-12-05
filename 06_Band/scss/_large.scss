@@ -1,0 +1,61 @@
+header, nav, main, footer {
+        max-width: 75rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header {
+        h1 {
+                font-size: 3rem;
+        }
+        h2 {
+                font-size: 2rem;
+        }
+        img {
+                width: 6.5rem;
+        }
+}
+
+
+/*----------- NAVIGATION --------------*/
+nav ul li {
+        width: auto;
+        a {
+                font-size: 1.5rem;
+        }
+}
+nav ul {
+        margin-left: 2%;
+}
+
+/*----------- MAIN --------------*/
+main {
+        h2 {
+                font-size: 2rem;
+        }
+        h3 {
+                font-size: 1.5rem;
+        }
+        .david-card {
+                margin: 0 1% 0 0;
+                width: 23.5%;
+        }
+        .zac-card, .riley-card {
+                margin: 0 1%;
+                width: 23.5%;
+        }
+        .kasey-card {
+                margin: 0 1% 0 0;
+                width: 23.5%;
+        }
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+        font-size: 1rem;
+}
