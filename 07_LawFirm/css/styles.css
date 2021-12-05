@@ -321,7 +321,8 @@ body {
 
 /*----------- HEADER --------------*/
 header {
-  padding: 1.5rem 2%; }
+  padding: 1.5rem 2%;
+  color: white; }
   header h1 {
     margin: 0;
     font-size: 6vw;
@@ -473,8 +474,7 @@ footer {
     font-size: 1.8rem;
     padding: 0; }
   header input {
-    padding: 0;
-    size: 3rem; }
+    padding: 0; }
 
   /*----------- NAVIGATION --------------*/
   nav ul li {
