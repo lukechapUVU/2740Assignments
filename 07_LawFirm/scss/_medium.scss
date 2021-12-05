@@ -1,0 +1,65 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header {
+    h1 {
+        font-size: 2.5rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+        padding: 0;
+    }
+    input {
+        padding: 0;
+        size: 3rem;
+    }
+}
+
+/*----------- NAVIGATION --------------*/
+nav ul li {
+    width: auto;
+    a{
+        padding: .5rem 1rem; 
+        font-size: 1rem;
+    }
+}
+
+
+/*----------- MAIN --------------*/
+main {
+    font-size: 1rem;
+    .attorney-name {
+            font-size: 1.3rem;
+    }
+    @for $i from 1 through 12 {
+        $w: ($i / 12) * 100%;
+        .medium-#{$i} {
+            flex-basis: $w;
+        }
+    }
+    .read-more-content {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: lighten($elementColor, 10%);
+        width: 100%;
+        text-align: center;
+        padding-top: 2%;
+        a {
+            color: white;
+        }
+        .hidden-tags {
+            visibility: hidden;
+        }
+    }
+}
+
+/*----------- FOOTER --------------*/
+footer i {
+    font-size: 1.3rem;
+}

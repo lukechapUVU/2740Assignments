@@ -1,0 +1,167 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: $fontFamily;
+}
+/*----------- HEADER --------------*/
+header {
+    padding: 1.5rem 2%;
+    h1 {
+        margin: 0;
+        font-size: 6vw;
+        padding-top: 0;
+    }
+    h2 {
+        margin: 0; 
+        font-weight: normal;
+        font-size: 4.5vw;
+        padding-bottom: 1rem;
+    }
+    input {
+        float: right;
+    }
+}
+#headerWrapper {
+    background-color: lighten($elementColor,20%);
+}
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: $elementColor;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    float: left;
+    width: 100%;
+    a {
+        display: block;
+        background-color: darken($elementColor, 10%);
+        color: white;
+        padding: .5rem 0 .5rem 4%;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    :first-child a {
+        border-left: none;
+    }
+    a:hover {
+        background-color: white;
+        color: darken($elementColor, 20%);
+    }
+}
+
+.active a {
+    background-color: darken($elementColor, 20%);
+    color: #fff;
+}
+
+/*----------- MAIN --------------*/
+main {
+    text-align: center;
+    font-size: 3vw;
+    .main-content {
+        padding: 0 2%;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    div.flexed {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column {
+        padding: 0 $gutter;
+    }
+    @for $i from 1 through 12 {
+        $w:($i / 12) * 100%;
+        .small-#{$i} { 
+            flex-basis: $w;
+        }
+    }
+    .attorney-card {
+        color: white;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        img {
+            width: 100%;
+        }
+        button {
+            margin: 3%;
+        }
+}
+    .attorney-card-content {
+        background-color: lighten($elementColor, 10%);
+    }
+    .attorney-name {
+        height: 1.5rem;
+        padding: 10% 2% 20% 2%;
+        font-size: 5vw;
+    }
+    .call-to-action-content {
+        text-align: center;
+        background-color: black;
+        color: white;
+        padding: 3vw 0;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .blog-post {
+        margin: 2% 0;
+    }
+    .blog-post-content {
+        text-align: left;
+        background-color: lighten($elementColor, 40%);
+        padding: 2%;
+        img {
+            width: 100%;
+        }
+    }
+    .read-more-content {
+        text-align: left;
+        background-color: lighten($elementColor, 40%);
+        padding: 0 0 2% 2%;
+    }
+    .tip-of-the-day {
+        margin-bottom: 2%;
+        text-align: left;
+    }
+    .tip-of-the-day-content {
+        background-color: lighten($elementColor, 40%);
+        padding: 2% 1vw 1% 1vw;
+        text-align: left;
+    }
+    .faq {
+        margin-bottom: 2%;
+        text-align: left;
+    }
+    .faq-content {
+        background-color: lighten($elementColor, 40%);
+        padding: 2% 1vw 1% 1vw;
+    }
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    padding: .5rem 2%;
+    text-align: center;
+    color: white;
+    background-color: $elementColor;
+    i {
+        padding: 0 3%;
+    }
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
