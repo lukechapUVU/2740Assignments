@@ -1,0 +1,41 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header {
+    h1 {
+        font-size: 1.8rem;
+        padding-top: 1.5rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    img {
+        width: 5.5rem;
+    }
+}
+
+/*----------- NAVIGATION --------------*/
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem; font-size: 1rem;}
+
+
+/*----------- MAIN --------------*/
+main {
+    h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    font-size: .8rem;
+}    

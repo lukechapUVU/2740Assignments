@@ -1,0 +1,43 @@
+header, nav, main, footer {
+        max-width: 75rem;
+        margin:auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+header {
+        h1 {
+                font-size: 2.5rem;
+        }
+        h2 {
+                font-size: 2rem;
+        }
+        img {
+                width: 6.5rem;
+        }
+}
+
+
+/*----------- NAVIGATION --------------*/
+nav ul li {
+        width: auto;
+        a {
+                font-size: 1.5rem;
+        }
+}
+
+/*----------- MAIN --------------*/
+main {
+        h2 {
+                font-size: 2rem;
+        }
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+        font-size: 1rem;
+}

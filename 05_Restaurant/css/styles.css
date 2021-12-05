@@ -321,23 +321,24 @@ body {
 
 /*----------- HEADER --------------*/
 header {
-  padding: 1.5rem 2%; }
+  padding: 1.5rem 2%;
+  background-color: #7F867B; }
   header h1 {
     margin: 0;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    padding-top: 1rem; }
   header h2 {
     margin: 0;
     font-weight: normal;
     font-size: 1rem; }
-
-#headerWrapper {
-  background-image: url("../imgs/header-small.jpg");
-  height: 153px;
-  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.2); }
+  header img {
+    float: left;
+    margin-right: 3%;
+    width: 4rem; }
 
 /*----------- NAVIGATION --------------*/
-#navWrapper {
-  background-color: lightgreen; }
+nav {
+  background-color: #AF9F8C; }
 
 nav ul {
   list-style-type: none;
@@ -347,107 +348,51 @@ nav ul {
 nav ul li {
   float: left;
   width: 25%; }
+  nav ul li a {
+    display: block;
+    background-color: #9a866e;
+    color: white;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .8rem;
+    text-align: center; }
+  nav ul li :first-child a {
+    border-left: none; }
+  nav ul li a:hover {
+    background-color: white;
+    color: #7e6c57; }
 
-nav ul li a {
-  display: block;
-  background-color: #64e764;
-  color: white;
-  border-left: 1px solid #777;
-  padding: .5rem 0;
-  text-decoration: none;
-  font-size: .8rem;
-  text-align: center; }
-
-nav ul li:first-child a {
-  border-left: none; }
-
-nav ul li.active a {
-  background-color: #38e038;
+.active a {
+  background-color: #7e6c57;
   color: #fff; }
-
-nav ul li a:hover {
-  background-color: white;
-  color: #38e038; }
 
 /*----------- MAIN --------------*/
 main {
-  color: #4ee44e;
-  padding: 0 2%;
-  min-height: 500px;
-  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.9); }
-  main h1 {
-    font-size: 1.5rem; }
-
-#mainWrapper {
-  background-image: url("../imgs/redwood-drawing.jpg");
-  position: relative;
-  animation: treeGrowth 5s 1; }
-
-@keyframes treeGrowth {
-  0% {
-    box-shadow: inset 0 500px 0 0 white; }
-  100% {
-    box-shadow: inset 0 0 0 0 white; } }
-main div {
-  color: black; }
-  main div h3, main div p {
-    text-align: center;
-    margin-bottom: 0;
-    margin-top: 10px;
-    font-size: .9rem; }
-  main div img {
-    display: block;
-    margin: auto;
-    width: 50%;
-    padding-top: 10%;
-    position: relative;
-    animation: rotateIcons 1.5s 1; }
-  main div button {
-    display: block;
-    margin: auto;
-    width: 50%;
-    margin-top: 5%; }
-
-@keyframes rotateIcons {
-  0% {
-    transform: rotate(90deg); }
-  100% {
-    transform: rotate(0deg); } }
-.cards-parent {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: 3rem; }
-
-.bobcat-card {
-  background-image: url("../imgs/bobcat.jpg");
-  background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 100, 0, 0.75);
-  width: 100%;
-  height: 450px; }
-
-.elk-card {
-  background-image: url("../imgs/elk.jpg");
-  background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(255, 165, 0, 0.75);
-  width: 100%;
-  height: 450px; }
-
-.owl-card {
-  background-image: url("../imgs/owl.jpg");
-  background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(150, 75, 0, 0.75);
-  width: 100%;
-  height: 450px; }
+  padding-bottom: 2%; }
+  main .main-content {
+    padding: 0 2%;
+    margin-top: 2%; }
+  main h2 {
+    font-size: 1.2rem;
+    margin-top: 0; }
+  main p {
+    font-size: 0.8rem; }
+  main .main-image {
+    float: right;
+    width: 50%; }
+  main .banner-image {
+    padding: 0;
+    margin: 0;
+    width: 100%; }
 
 /*----------- FOOTER --------------*/
 footer {
   padding: .5rem 2%;
   text-align: center;
   color: white;
-  font-size: .6rem; }
-
-#footerWrapper {
-  background-color: lightgreen; }
+  font-size: .6rem;
+  background-color: #AF9F8C; }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
@@ -459,18 +404,14 @@ footer {
   /*----------- BODY --------------*/
   /*----------- HEADER --------------*/
   header h1 {
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    padding-top: 1.5rem; }
   header h2 {
     font-size: 1.5rem; }
-
-  #headerWrapper {
-    background-image: url("../imgs/header-medium.jpg");
-    height: 262px; }
+  header img {
+    width: 5.5rem; }
 
   /*----------- NAVIGATION --------------*/
-  nav ul li {
-    width: auto; }
-
   nav ul li:first-child a {
     border-left: 1px solid #777; }
 
@@ -482,23 +423,10 @@ footer {
     font-size: 1rem; }
 
   /*----------- MAIN --------------*/
-  main div img {
-    padding-top: 2%; }
-
-  .bobcat-card {
-    width: 50%;
-    background-size: contain;
-    background-repeat: no-repeat; }
-
-  .elk-card {
-    width: 50%;
-    background-size: contain;
-    background-repeat: no-repeat; }
-
-  .owl-card {
-    width: 50%;
-    background-size: contain;
-    background-repeat: no-repeat; }
+  main h2 {
+    font-size: 1.5rem; }
+  main p {
+    font-size: 1rem; }
 
   /*----------- FOOTER --------------*/
   footer {
@@ -506,7 +434,7 @@ footer {
 /* end of media query */
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
-    max-width: 60rem;
+    max-width: 75rem;
     margin: auto; }
 
   /*----------- BODY --------------*/
@@ -515,31 +443,18 @@ footer {
     font-size: 2.5rem; }
   header h2 {
     font-size: 2rem; }
-
-  #headerWrapper {
-    background-image: url("../imgs/header-large.jpg");
-    height: 437px;
-    background-size: cover;
-    background-position: center bottom; }
+  header img {
+    width: 6.5rem; }
 
   /*----------- NAVIGATION --------------*/
-  nav ul li a {
-    font-size: 1.5rem; }
+  nav ul li {
+    width: auto; }
+    nav ul li a {
+      font-size: 1.5rem; }
 
   /*----------- MAIN --------------*/
-  main h1 {
-    font-size: 1.8rem; }
-  main div h3 {
-    font-size: 1.3rem; }
-
-  .bobcat-card {
-    width: 33.3%; }
-
-  .elk-card {
-    width: 33.3%; }
-
-  .owl-card {
-    width: 33.3%; }
+  main h2 {
+    font-size: 2rem; }
 
   /*----------- FOOTER --------------*/
   footer {
