@@ -1,0 +1,151 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+body {
+    //font-family: 'Lora', serif;
+}
+
+/*----------- HEADER --------------*/
+header {
+    padding: 2%;
+    h1 {
+        margin: 0;
+    }
+}
+
+/*----------- NAV --------------*/
+nav {
+    background-color: #73b1e7;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul.hide {
+    display: none;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: white;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+nav ul li.active {
+    background-color: rgba(0,0,0, 0.2);
+}
+nav ul li a:hover {
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+}
+
+/*----------- MAIN --------------*/
+picture {
+    width: 100%;
+    margin: 0;
+    img {
+        width: 100%;
+        margin: 0;
+    }
+    position: relative;
+    p {
+        padding: 1%;
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        font-size: 0.5rem;
+    }
+}
+.tourism {
+    margin: 0 2%;
+}
+.card-parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    .hotel-card {
+        background-image: url("../imgs/hotel.jpg");
+        background-size: cover;
+    }
+    .red-line-card {
+        background-image: url("../imgs/red-line.jpg");
+        background-size: cover;
+    }
+    .city-card {
+        background-image: url("../imgs/city.png");
+        background-size: cover;
+    }
+    .dining-card {
+        background-image: url("../imgs/dining.jpg");
+        background-size: cover;
+    }
+}
+.card-parent div:nth-child(1) a {
+    background-color: #B5B1B2;
+}
+.card-parent div:nth-child(2) a {
+    background-color: #A9AFD1;
+}
+.card-parent div:nth-child(3) a {
+    background-color: #A1CDF4;
+}
+.card-parent div:nth-child(4) a {
+    background-color: #7C809B;
+}
+.card-parent div {
+    margin: 2%;
+    :hover {
+         background: none !important;
+         box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, .4);
+         text-shadow: 0 0 4px white;
+    }
+    a {
+        :hover {
+            box-shadow: none;
+        }
+        display: block;
+        height: 200px;
+        transition: all .5s ease-in;
+        color: black;
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-align: center;
+        padding-top: 40px;
+    }
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    padding: .5rem 2%;
+    color: white;
+    background-color: #73b1e7;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

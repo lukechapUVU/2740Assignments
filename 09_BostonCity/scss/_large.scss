@@ -1,0 +1,46 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin: auto;
+    }
+
+    /*----------- HEADER --------------*/
+    header {
+        h1 {
+            font-size: 3rem;
+        }
+        h3 {
+            font-size: 1.7rem;
+        }
+    }
+    
+    /*----------- NAV --------------*/
+    nav {
+        background: #d0e4f7;
+        background: -moz-linear-gradient(top,  #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%);
+        background: -webkit-linear-gradient(top,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); 
+        background: linear-gradient(to bottom,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 );
+    }
+    
+    /*----------- MAIN --------------*/
+    .card-parent {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .tourism h3 {
+        font-size: 2rem;
+    }
+    
+    /*----------- FOOTER --------------*/
+    footer {
+        margin-top: 3%;
+        background: #d0e4f7;
+        background: -moz-linear-gradient(top,  #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%);
+        background: -webkit-linear-gradient(top,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); 
+        background: linear-gradient(to bottom,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 );
+    }
+    
+} 
