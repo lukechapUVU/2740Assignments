@@ -1,0 +1,31 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    /*----------- HEADER --------------*/
+    header img {
+        width: 20%;
+        margin: 2%;
+    }
+    
+    /*----------- NAV --------------*/
+    
+    
+    /*----------- MAIN --------------*/
+    .news-parent {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .news-parent figure:nth-child(1) {
+        grid-column: 1 / span 3;
+    }
+    .news-story-caption {
+        font-size: 1rem;
+    }
+    
+    /*----------- FOOTER --------------*/
+    .footer-parent {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-section {
+        margin-left: 10%;
+    }
+}

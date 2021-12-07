@@ -1,0 +1,69 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+
+    /*----------- HEADER --------------*/
+    header img {
+        width: 15%;
+        margin: 2%;
+    }
+    
+    /*----------- NAV --------------*/
+    nav {
+        background: #ff1a00;
+        background: -moz-linear-gradient(top, #ff1a00 0%, #b50000 100%);
+        background: -webkit-linear-gradient(top, #ff1a00 0%,#b50000 100%);
+        background: linear-gradient(to bottom, #ff1a00 0%,#b50000 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endColorstr='#b50000',GradientType=0 );
+    }
+    nav button {
+        display: none;
+    }
+    nav ul {
+        margin-left: 2%;
+    }
+    nav ul.hide {
+        display: block;
+    }
+    nav ul li {
+        float: left;
+    }
+    nav ul li a {
+        border: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+        padding: .6rem 1rem;
+        color: color;
+    }
+    nav ul li a:first-child {
+        border-left: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    
+    /*----------- MAIN --------------*/
+    main {
+        max-width: 80rem;
+        margin: auto;
+    }
+    .news-parent {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .news-parent figure:nth-child(1) {
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+    }
+    .news-story-caption {
+        font-size: 1rem;
+    }
+    
+    /*----------- FOOTER --------------*/
+    .footer-parent {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    footer {
+        background: #ff1a00;
+        background: -moz-linear-gradient(top, #ff1a00 0%, #b50000 100%);
+        background: -webkit-linear-gradient(top, #ff1a00 0%,#b50000 100%);
+        background: linear-gradient(to bottom, #ff1a00 0%,#b50000 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff1a00', endColorstr='#b50000',GradientType=0 );
+    }
+    
+} 
