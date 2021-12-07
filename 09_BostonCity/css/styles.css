@@ -448,7 +448,7 @@ picture {
   picture img {
     width: 100%;
     margin: 0; }
-  picture p {
+  picture div {
     padding: 1%;
     position: absolute;
     bottom: 0;
@@ -674,7 +674,7 @@ footer {
     outline: none; }
   .slick-list.dragging {
     cursor: pointer;
-    cursor: hand; }
+    cursor: grab; }
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
@@ -763,7 +763,7 @@ footer {
   .card-parent {
     grid-template-columns: 1fr 1fr; }
 
-  picture p {
+  picture div {
     font-size: 1rem; }
 
   .tourism h3 {
