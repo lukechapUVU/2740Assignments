@@ -1,0 +1,111 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+/*----------- HEADER --------------*/
+header {
+    background-color: gray;
+    padding: 1%;
+}
+
+/*----------- NAVIGATION --------------*/
+
+
+/*----------- MAIN --------------*/
+main {
+    @for $i from 1 through 12 {
+        $w:($i / 12) * 100%;
+        .small-#{$i} { 
+            flex-basis: $w;
+        }
+    }
+    div.flexed {
+        display: flex;
+        flex-wrap: wrap;
+        div {
+            text-align: center;
+            border: 1px solid black;
+            padding: 0 2% 2vw 2%;
+            a {
+                color: blue;
+            }
+            a:visited {
+                color: blueviolet;
+            }
+            a:hover {
+                color: black;
+            }
+            a:active {
+                color: red;
+            }
+        }
+    }
+    .column {
+        box-shadow: inset 0 0 0 1000px rgba(255,255,255,.6);
+        background-size: cover;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .krunchy-kookie {
+        background-image: url('../../01_KrunchyKookie/imgs/caramel.jpg');
+    }
+    .science-museum {
+        background-image: url('../../02_ScienceMuseum/imgs/Science-Museum-logo.png');
+        background-size: contain;
+        background-position: center;
+    }
+    .fruit-stand {
+        background-image: url('../../03_FruitStand/imgs/fruit-logo.png');
+        background-size: contain;
+        background-position: center;
+    }
+    .national-park {
+        background-image: url('../../04_NationalPark/imgs/redwood-drawing.jpg');
+        background-size: contain;
+        background-position: center;
+    }
+    .restaurant {
+        background-image: url('../../05_Restaurant/imgs/banner.jpg');
+        background-position: center;
+    }
+    .band {
+        background-image: url('../../06_Band/imgs/TakeAWalkOnTheWildSide.png');
+        background-position: center;
+    }
+    .law-firm {
+        background-image: url('../../07_LawFirm/imgs/blog1.jpg');
+        background-position: center;
+    }
+    .news {
+        background-image: url('../../08_News/imgs/logo.png');
+        background-size: contain;
+        background-position: center;
+    }
+    .boston-city {
+        background-image: url('../../09_BostonCity/imgs/city.png');
+        background-position: center;
+    }
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: gray;
+    text-align: center;
+    padding: 1%;
+    margin-top: 5% !important;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
