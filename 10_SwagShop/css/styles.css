@@ -538,7 +538,7 @@ form label.top, form div {
   display: block;
   color: green;
   font-size: .8rem; }
-  form label.top div, form div div {
+  form label.top span, form div span {
     margin-left: 2%; }
   form label.top input:focus, form div input:focus {
     outline: 2px solid green;
