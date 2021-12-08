@@ -1,0 +1,84 @@
+
+div#pageWrapper {
+    grid-template-areas:
+        "header header"
+        "navigation content" 
+        "footer footer";
+    grid-template-columns: 150px auto;
+}
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+
+
+
+/*----------- NAVIGATION --------------*/
+a.myjump {
+    display: none;
+}
+nav {
+    height: auto;
+}
+
+
+/*----------- MAIN --------------*/
+main {
+    grid-template-areas:
+        "tablets-parent tablets-parent tablets-parent"
+        "apple-header apple-header apple-img"
+        "apple-desc apple-desc apple-img"
+        "samsung-img samsung-header samsung-header"
+        "samsung-img samsung-desc samsung-desc"
+        "amazon-header amazon-header amazon-img"
+        "amazon-desc amazon-desc amazon-img";
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 0.8rem;
+    h4, p, img {
+        padding: 1vw;
+    }
+    h4 {
+        font-size: 1.2rem;
+        margin: 5vh 0 0 0;
+        padding-bottom: 0;
+    }
+    img {
+        padding-top: 10vh;
+    }
+    .tablets-parent {
+        grid-area: tablets-parent;
+    }
+    .apple-header {
+        grid-area: apple-header;
+    }
+    .apple-img {
+        grid-area: apple-img;
+    }
+    .apple-desc {
+        grid-area: apple-desc;
+    }
+    .samsung-header {
+        grid-area: samsung-header;
+    }
+    .samsung-img {
+        grid-area: samsung-img;
+    }
+    .samsung-desc {
+        grid-area: samsung-desc;
+    }
+    .amazon-header {
+        grid-area: amazon-header;
+    }
+    .amazon-img {
+        grid-area: amazon-img;
+    }
+    .amazon-desc {
+        grid-area: amazon-desc;
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+    
