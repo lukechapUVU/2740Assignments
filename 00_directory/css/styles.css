@@ -404,6 +404,10 @@ main .swag-shop {
   background-image: url("../../10_SwagShop/imgs/logo.png");
   background-position: center;
   background-size: contain; }
+main .tech-watch {
+  background-image: url("../../11_TechWatch/imgs/logo.png");
+  background-position: center;
+  background-size: contain; }
 
 /*----------- FOOTER --------------*/
 footer {
