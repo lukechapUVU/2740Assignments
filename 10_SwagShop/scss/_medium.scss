@@ -1,0 +1,88 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+
+    /*----------- HEADER --------------*/
+    header {
+        height: 15vw;
+        img {
+            width: 12vw;
+            height: 12vw;
+        }
+        h1 {
+            padding: 3.5vw 2vw 0 2vw;
+            margin: 0;
+        }
+    }
+    
+    /*----------- NAV --------------*/
+    nav {
+        background-color:$menuColor;
+        ul {
+            margin: 0 0 0 2vw; 
+            padding: 0;
+        }
+        ul>li {
+            float: left; 
+            list-style: none; 
+            border-left: 1px solid rgba(0,0,0,0.2); 
+        }
+        ul li:last-child{
+            border-right: 1px solid rgba(0,0,0,0.2);
+        }
+        ul li a { 
+            display: block;
+            background: none;
+            font-size: 1.2rem;
+            padding: .9em .9em;
+            color: $menuTextColor;
+            text-decoration: none;
+            -webkit-transition: background 0.3s linear; 
+            transition: background 0.3s linear;
+        }
+        ul li a:hover {
+            background: darken($menuColor,15%);
+        }
+        #primaryNav li.parent > a::before {
+            font-size: .75rem;
+            content: "\25BC";
+            color: rgba(255,255,255,.5);
+        }
+        ul li ul {
+            z-index:998;
+            position: absolute;
+            background-color: darken($menuColor, 3%);
+            left: -999em; 
+            width: 12em; 
+        }
+         ul li ul li { 
+            width: 100%;
+            border: none;
+            border-top: solid 1px rgba(0,0,0,0.2); 
+        }
+         ul li:hover ul { 
+            left: auto;
+            margin-left: 0;
+        }
+        li.current-menu-item a{
+            background-color: rgba(0,0,0,0.25);
+        }
+    } 
+    
+    /*----------- MAIN --------------*/
+    h2 {
+        font-size: 1.8rem;
+    }
+    form label.top input, form label.top select, .dropdown input, .dropdown select {
+        max-width: 50%;
+    }
+    .submit-button {
+        padding: 3%;
+        width: 46%;
+    }
+    
+    /*----------- FOOTER --------------*/
+    footer {
+        font-size: 1rem;
+    }
+
+}

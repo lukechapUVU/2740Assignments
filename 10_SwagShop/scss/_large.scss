@@ -1,0 +1,37 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    header, nav, main, footer {
+        max-width: 64rem;
+        margin: auto;
+    }
+
+    /*----------- HEADER --------------*/
+    header {
+        h1 {
+            font-size: 5rem;
+        }
+    }
+    
+    /*----------- NAV --------------*/
+
+    
+    /*----------- MAIN --------------*/
+    h2 {
+        font-size: 2.5rem;
+    } 
+    form label.top input, form label.top select, .dropdown input, .dropdown select {
+        height: 40px;
+        max-width: 31%;
+    }
+    .submit-button {
+        padding: 1%;
+        width: 30%;
+    }
+
+    /*----------- FOOTER --------------*/
+    footer {
+        margin-top: 3%;
+    }
+    
+} 

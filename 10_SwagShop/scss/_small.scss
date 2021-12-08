@@ -1,0 +1,141 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%; 
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: $fontFamily;
+}
+
+/*----------- HEADER --------------*/
+header {
+    display: flex;
+    padding: 2%;
+    img {
+        width: 25%;
+        @media only screen and (max-width: 28rem) {
+            width: 25vw;
+        }
+    }
+    h1 {
+        font-size: 3rem;
+        padding: 8% 0 0 5%;
+        @media only screen and (max-width: 22rem) {
+            font-size: 10vw;
+        }
+    }
+}
+
+/*----------- NAV --------------*/
+
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    h2 {
+        font-size: 2rem;
+        margin: 2% 0;
+        color: $secondaryColor;
+    }
+}
+form fieldset {
+    border-radius: 10px;
+    margin-bottom: 3%;
+    legend {
+        padding: 0 1%;
+        color: $secondaryColor;
+        font-weight: bold;
+        margin-left: 3%;
+    }
+}
+form label.top, form div {
+    display: block;
+    color: green;
+    font-size: .8rem;
+    div {
+        margin-left: 2%;
+    }
+    input:focus {
+        outline: 2px solid green;
+        background-color: white;
+    }
+}
+form label.top input, form label.top select {
+    display: block;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20px;
+    padding: .75rem;
+    color: darkslategray;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    
+}
+.dropdown input, .dropdown select {
+    display: block;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0px;
+    padding: .75rem;
+    color: darkslategray;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.sbs-parent {
+    margin-bottom: 0;
+    margin-top: 2%;
+}
+form label.sbs {
+    display: block;
+    padding: 0;
+    color: green;
+    margin-left: 2%;
+    font-size: 1.5rem;
+    input {
+        margin-right: 1rem;
+        transform: scale(2);
+    }
+}
+.form-set {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    label {
+        margin: 1% 0;
+    }
+}
+.submit-button {
+    border: none;
+    background-color: $mainColor;
+    margin: 2%;
+    margin-bottom: 5%;
+    padding: 5%;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 96%;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    padding: .5rem 2%;
+    color: black;
+    background-color: $mainColor;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
