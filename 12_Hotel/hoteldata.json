@@ -1,0 +1,25 @@
+[   {
+    "name":"Lexington Airport",
+    "photo":"imgs/lexington.jpg",
+    "address":["1555 North Canyon Drive","Lexington, VA 12345"],
+    "phone":"385-555-1234"
+    },
+    {
+    "name":"Baltimore Downtown",
+    "photo":"imgs/baltimore.jpg",
+    "address":["100 Main St","Baltimore, MA 15973"],
+    "phone":"702-963-2222"
+    },
+    {
+    "name":"San Diego Beaches",
+    "photo":"imgs/san-diego.jpg",
+    "address":["450 Beach Side Boulevard","San Diego, CA 33322"],
+    "phone":"501-888-4242"
+    },
+    {
+    "name":"Downtown Denver",
+    "photo":"imgs/denver.jpg",
+    "address":["804 State St","Denver, CO 50505"],
+    "phone":"385-555-1234"
+    }
+]

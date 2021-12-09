@@ -1,0 +1,137 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: $bodyBackgroundColor;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: $elementBackgroundColor;
+    margin: 0;
+    color: white;
+}
+header h1 {
+    margin: 0;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: lighten($elementBackgroundColor, 20%);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    flex-basis: 33.3%;
+}
+nav ul li a {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: lighten($elementBackgroundColor, 10%);
+    color: #eee;
+    border-left: 3px solid #ccc;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    :nth-child(1) {
+        width: 100%;
+        font-size: 2rem;
+    }
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li.active a {
+    background-color: darken($elementBackgroundColor, 5%);
+    color: #fff;
+}
+nav ul li a:hover {
+    background-color: lighten($elementBackgroundColor, 20%);
+    color: black;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+}
+#hotelWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    .hotel-card {
+        background-color: darken($bodyBackgroundColor, 10%);
+        margin: 2%;
+        padding-top: 2%;
+    }
+    .icon-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .hotel-icon {
+            margin: 2vh 2vw 0 2vw;
+            .ion-icon {
+                float: left;
+                font-size: 9vw;
+                display: block;
+            }
+            p {
+                padding-left: 2rem;
+                font-size: 3.8vw;
+                margin-top: 0;
+            }
+        }
+        
+    }
+    figure {
+        position: relative;
+        width: 96%;
+        margin: 0 2%;
+        img {
+            width: 100%;
+        }
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-size: 1.2rem;
+            background-color: rgba(0,0,0,0.6);
+            color: white;
+            padding: .3rem $gutter;
+        }
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: $elementBackgroundColor;
+    padding: .5rem 2%;
+    text-align: center;
+    margin-bottom: 14vh;
+    color: white;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
