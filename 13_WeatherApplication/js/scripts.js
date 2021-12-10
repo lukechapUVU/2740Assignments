@@ -34,6 +34,8 @@ fetch (apiURL)
         var time = e.dt_txt;
         i++;
         if(time.includes('18:00:00'/*CST*/))  {
+            console.log(e);
+            
             //Day
             forecastDayNumber++;
             if(forecastDayNumber === 7) {
