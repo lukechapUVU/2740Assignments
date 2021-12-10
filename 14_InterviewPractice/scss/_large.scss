@@ -1,18 +1,71 @@
 
-div#pageWrapper {
+div#constraintWrapper {
         
         max-width: 64rem;
         margin:auto;
 }
 
 /*----------- BODY --------------*/
-body {
-        background-color: green;
-}
 
 
 /*----------- HEADER --------------*/
-
+main {
+        .intro {
+                h1, h2 {
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1rem;
+                }
+                ul {
+                    font-size: 1rem;
+                }
+        }
+        .about-us1 {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                .about-us1-card {
+                        margin: auto 10%;
+                        img {
+                                width: 100%;
+                                display: block;
+                                margin: auto auto;
+                        }
+                        h3 {
+                                font-size: 1.5rem;
+                        }
+                        p {
+                                font-size: 1rem;
+                        }
+                }
+        }
+        .about-us2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+        }
+        .infrastructure-card, .technology-card, .live-card {
+                img {
+                    width: 100%;
+                }
+        }
+        .live-card {
+                grid-row:  2;
+                grid-column: 1 / span 2;
+                margin-left: 5%;
+        }
+        .pricing {
+                grid-row: 1 / span 2;
+                grid-column: 3;
+                width: 100%;
+                margin-top: 0;
+                img {
+                        margin-bottom: 40px;
+                }
+                p {
+                        font-size: 1rem;
+                }
+        }
+        
+}
 
 
 /*----------- NAVIGATION --------------*/

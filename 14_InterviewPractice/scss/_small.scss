@@ -1,11 +1,11 @@
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
-html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin-right: -7vw;}
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
-div#pageWrapper {
+div#constraintWrapper {
     display: grid;
     grid-template-areas:
         "header"
@@ -67,59 +67,80 @@ main {
         padding-top: 0;
         width: 100%;
     }
-    .intro {
+    div#introWrapper {
         background-color: black;
+        margin-top: 20px;
+    }
+    .intro {
+        width: 100%;
         padding: 2%;
         color: white;
+        display: grid;
+        grid-template-columns: 1fr;
         h1 {
             margin-top: 0;
             font-style: italic;
             margin-left: 3%;
         }
         h1, h2 {
+            font-size: 2.4rem;
             color: yellow;
             margin-bottom: 1%;
         }
         ul {
+            font-size: 1.6rem;
             margin-left: 10vw;
         }
         p {
+            font-size: 1.6rem;
             margin: 0 auto 0 4%;
         }
     }
-    .about-us1-card {
-        margin: auto 3%;
-        img {
-            width: 94%;
-        }
-        h3 {
-            color: #1287b5;
-            font-size: 4.5rem;
-            margin-top: 3%;
-            margin-bottom: 1%;
-        }
-        p {
-            margin-top: 0;
-            color: darkgray;
+    .more-about-us {
+        color: #1287b5;
+        font-size: 2.4rem;
+        margin-top: 3%;
+        margin-bottom: 1%;
+    }
+    .about-us1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        .about-us1-card {
+            margin: auto 3%;
+            img {
+                width: 94%;
+            }
+            h3 {
+                color: #1287b5;
+                font-size: 2rem;
+                margin-top: 3%;
+                margin-bottom: 1%;
+            }
+            p {
+                margin-top: 0;
+                font-size: 1rem;
+                color: darkgray;
+            }
         }
     }
     .about-us2 {
         margin-top: 8%;
     }
-    .about-us2-card {
+    .infrastructure-card, .technology-card, .live-card {
         margin: auto 3%;
         img {
             width: 96%;
         }
         h3 {
             color: #1287b5;
-            font-size: 4.5rem;
+            font-size: 2rem;
             margin-top: 3%;
             margin-bottom: 1%;
         }
         p {
             margin-top: 0;
             color: darkgray;
+            font-size: 1rem;
         }
     }
     .pricing {
@@ -127,7 +148,9 @@ main {
         position: relative;
         border: 2px solid black;
         img {
-            width: 94%;
+            width: 100%;
+            display: block;
+            margin: auto auto;
         }
         button {
             background-color: #0480b1;
@@ -145,35 +168,36 @@ main {
         }
     }
     .long-companies {
-        display: block;
+        margin-top: 3%;
         margin-left: auto;
-        margin-right: auto;
         width: 98%;
         display: none;
     }
     .short-companies {
         display: block;
         margin-left: auto;
-        margin-right: auto;
         width: 98%;
     }
 }
 
 
 /*----------- FOOTER --------------*/
-footer {
-    margin-top: 3%;
-    font-size: 2rem;
-    width: 105%;
-    grid-area: footer;
-    padding-left: 3%;
-    color: white;
-    font-weight: bold;
+#footerWrapper {
+    margin-top: 5%;
+    width: 100%;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d0e4f7+0,73b1e7+24,0a77d5+50,539fe1+79,87bcea+100;Blue+Pipe+%231 */
     background: #d0e4f7; /* Old browsers */
     background: -moz-linear-gradient(top,  #d0e4f7 0%, #73b1e7 24%, #0a77d5 50%, #539fe1 79%, #87bcea 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #d0e4f7 0%,#73b1e7 24%,#0a77d5 50%,#539fe1 79%,#87bcea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#87bcea',GradientType=0 ); /* IE6-9 */
+}
+footer {
+    font-size: .8rem;
+    width: 105%;
+    grid-area: footer;
+    padding-left: 3%;
+    color: white;
+    font-weight: bold;
 
 }
