@@ -1,0 +1,55 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+    background-color: lightblue;
+}
+
+/*----------- MAIN --------------*/
+#mainWrapper {
+    text-align: center;
+    h1 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 4vh;
+    }
+}
+#weatherWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.day-name {
+    color: white;
+    background-color: black;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 0;
+}
+.temperature {
+    color: blue;
+    font-size: 4rem;
+    margin: 0 auto 6% auto;
+}
+.weather-icon {
+    width: 5rem;
+    background-color: rgba(0,0,0,.2);
+    border-radius: 10px;
+}
+.weather-card {
+    background-color: white;
+    flex-basis: 100%;
+    margin: 0 0.6vw;
+    padding-bottom: 2%;
+}
+.medium-space {
+    flex-basis: 0%;
+}

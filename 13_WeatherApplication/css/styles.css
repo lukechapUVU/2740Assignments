@@ -317,184 +317,79 @@ html {
 /*----------- BODY --------------*/
 body {
   font-size: 16px;
-  font-family: Verdana, sans-serif; }
+  font-family: Verdana, sans-serif;
+  background-color: lightblue; }
 
-/*----------- HEADER --------------*/
-header {
-  background-color: gray;
-  padding: 1%; }
-
-/*----------- NAVIGATION --------------*/
 /*----------- MAIN --------------*/
-main .small-1 {
-  flex-basis: 8.3333333333%; }
-main .small-2 {
-  flex-basis: 16.6666666667%; }
-main .small-3 {
-  flex-basis: 25%; }
-main .small-4 {
-  flex-basis: 33.3333333333%; }
-main .small-5 {
-  flex-basis: 41.6666666667%; }
-main .small-6 {
-  flex-basis: 50%; }
-main .small-7 {
-  flex-basis: 58.3333333333%; }
-main .small-8 {
-  flex-basis: 66.6666666667%; }
-main .small-9 {
-  flex-basis: 75%; }
-main .small-10 {
-  flex-basis: 83.3333333333%; }
-main .small-11 {
-  flex-basis: 91.6666666667%; }
-main .small-12 {
-  flex-basis: 100%; }
-main div.flexed {
+#mainWrapper {
+  text-align: center; }
+  #mainWrapper h1 {
+    font-size: 2rem; }
+  #mainWrapper h3 {
+    font-size: 1.5rem;
+    margin-bottom: 4vh; }
+
+#weatherWrapper {
   display: flex;
   flex-wrap: wrap; }
-  main div.flexed div {
-    text-align: center;
-    border: 1px solid black;
-    padding: 0 2% 2vw 2%; }
-    main div.flexed div a {
-      color: blue; }
-    main div.flexed div a:visited {
-      color: blueviolet; }
-    main div.flexed div a:hover {
-      color: black; }
-    main div.flexed div a:active {
-      color: red; }
-main .column {
-  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer; }
-main .krunchy-kookie {
-  background-image: url("../../01_KrunchyKookie/imgs/caramel.jpg"); }
-main .science-museum {
-  background-image: url("../../02_ScienceMuseum/imgs/Science-Museum-logo.png");
-  background-size: contain;
-  background-position: center; }
-main .fruit-stand {
-  background-image: url("../../03_FruitStand/imgs/fruit-logo.png");
-  background-size: contain;
-  background-position: center; }
-main .national-park {
-  background-image: url("../../04_NationalPark/imgs/redwood-drawing.jpg");
-  background-size: contain;
-  background-position: center; }
-main .restaurant {
-  background-image: url("../../05_Restaurant/imgs/banner.jpg");
-  background-position: center; }
-main .band {
-  background-image: url("../../06_Band/imgs/TakeAWalkOnTheWildSide.png");
-  background-position: center; }
-main .law-firm {
-  background-image: url("../../07_LawFirm/imgs/blog1.jpg");
-  background-position: center; }
-main .news {
-  background-image: url("../../08_News/imgs/logo.png");
-  background-size: contain;
-  background-position: center; }
-main .boston-city {
-  background-image: url("../../09_BostonCity/imgs/city.png");
-  background-position: center; }
-main .swag-shop {
-  background-image: url("../../10_SwagShop/imgs/logo.png");
-  background-position: center;
-  background-size: contain; }
-main .tech-watch {
-  background-image: url("../../11_TechWatch/imgs/logo.png");
-  background-position: center;
-  background-size: contain; }
-main .hotel {
-  background-image: url("../../12_Hotel/imgs/baltimore.jpg");
-  background-position: center;
-  background-size: contain; }
-main .weather-application {
-  background-image: url("//openweathermap.org/img/wn/01d.png");
-  background-position: center;
-  background-size: contain; }
 
-/*----------- FOOTER --------------*/
-footer {
-  background-color: gray;
-  text-align: center;
-  padding: 1%;
-  margin-top: 5% !important; }
+.day-name {
+  color: white;
+  background-color: black;
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-top: 0; }
 
-/*----- Clearfix: Force an Element not to collapse -----*/
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
+.temperature {
+  color: blue;
+  font-size: 4rem;
+  margin: 0 auto 6% auto; }
+
+.weather-icon {
+  width: 5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px; }
+
+.weather-card {
+  background-color: white;
+  flex-basis: 100%;
+  margin: 0 0.6vw;
+  padding-bottom: 2%; }
+
+.medium-space {
+  flex-basis: 0%; }
 
 @media only screen and (min-width: 35rem) {
-  /*----------- BODY --------------*/
-  /*----------- HEADER --------------*/
-  /*----------- NAVIGATION --------------*/
-  /*----------- MAIN --------------*/
-  main .medium-1 {
-    flex-basis: 8.3333333333%; }
-  main .medium-2 {
-    flex-basis: 16.6666666667%; }
-  main .medium-3 {
-    flex-basis: 25%; }
-  main .medium-4 {
-    flex-basis: 33.3333333333%; }
-  main .medium-5 {
-    flex-basis: 41.6666666667%; }
-  main .medium-6 {
-    flex-basis: 50%; }
-  main .medium-7 {
-    flex-basis: 58.3333333333%; }
-  main .medium-8 {
-    flex-basis: 66.6666666667%; }
-  main .medium-9 {
-    flex-basis: 75%; }
-  main .medium-10 {
-    flex-basis: 83.3333333333%; }
-  main .medium-11 {
-    flex-basis: 91.6666666667%; }
-  main .medium-12 {
-    flex-basis: 100%; }
+  #mainWrapper h1 {
+    font-size: 4rem; }
+  #mainWrapper h3 {
+    font-size: 2.5rem; }
 
-  /*----------- FOOTER --------------*/ }
+  .day-name {
+    font-size: 2rem;
+    line-height: 4rem; }
+
+  .temperature {
+    font-size: 5rem; }
+
+  .weather-icon {
+    width: 5rem; }
+
+  .weather-card {
+    flex-basis: 30%;
+    margin: 3% 1.5% 0 1.5%; }
+
+  .medium-space {
+    flex-basis: 17%; } }
 /* end of media query */
-@media only screen and (min-width: 60rem) {
-  header, nav, main, footer {
-    max-width: 60rem;
+@media only screen and (min-width: 64rem) {
+  header, main, footer {
+    max-width: 64rem;
     margin: auto; }
 
-  /*----------- BODY --------------*/
-  /*----------- HEADER --------------*/
-  /*----------- NAVIGATION --------------*/
-  /*----------- MAIN --------------*/
-  main .large-1 {
-    flex-basis: 8.3333333333%; }
-  main .large-2 {
-    flex-basis: 16.6666666667%; }
-  main .large-3 {
-    flex-basis: 25%; }
-  main .large-4 {
-    flex-basis: 33.3333333333%; }
-  main .large-5 {
-    flex-basis: 41.6666666667%; }
-  main .large-6 {
-    flex-basis: 50%; }
-  main .large-7 {
-    flex-basis: 58.3333333333%; }
-  main .large-8 {
-    flex-basis: 66.6666666667%; }
-  main .large-9 {
-    flex-basis: 75%; }
-  main .large-10 {
-    flex-basis: 83.3333333333%; }
-  main .large-11 {
-    flex-basis: 91.6666666667%; }
-  main .large-12 {
-    flex-basis: 100%; }
+  .weather-card {
+    flex-basis: 17%; }
 
-  /*----------- FOOTER --------------*/ }
+  .medium-space {
+    flex-basis: 0%; } }
 /* end of media query */

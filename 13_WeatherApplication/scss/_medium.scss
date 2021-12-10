@@ -1,0 +1,26 @@
+
+#mainWrapper {
+    h1 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 2.5rem;
+    }
+}
+.day-name {
+    font-size: 2rem;
+    line-height: 4rem;
+}
+.temperature {
+    font-size: 5rem;
+}
+.weather-icon {
+    width: 5rem;
+}
+.weather-card {
+    flex-basis: 30%;
+    margin: 3% 1.5% 0 1.5%;
+}
+.medium-space {
+    flex-basis: 17%;
+}
