@@ -1,0 +1,58 @@
+
+div#pageWrapper {
+    grid-template-areas:
+    "header"
+    "navigation" 
+    "content"
+    "footer";
+    grid-template-columns: auto;
+}
+
+/*----------- BODY --------------*/
+
+
+/*----------- HEADER --------------*/
+header {
+    padding-bottom: 0;
+    img {
+        width: 20rem;
+    }
+}
+
+
+/*----------- NAVIGATION --------------*/
+.nav-parent {
+    float: right;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    flex-basis: auto;
+    a {
+        font-size: 1rem;
+        padding: .6rem 1rem;
+    }
+}
+
+/*----------- MAIN --------------*/
+main {
+    .intro {
+        padding-left: 4%;
+        h1 {
+            margin-top: 2%;
+        }
+        h1, h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.4rem;
+        }
+        ul {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+/*----------- FOOTER --------------*/
+    
